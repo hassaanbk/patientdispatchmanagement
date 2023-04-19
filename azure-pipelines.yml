@@ -19,7 +19,7 @@ stages:
       displayName: 'Install Node.js'
 
     - script: |
-        npm install
+        npm install --python="C:\Users\hassa\AppData\Local\Programs\Python\Python311\python.exe"
         npm run build
       displayName: 'npm install and build'
 
