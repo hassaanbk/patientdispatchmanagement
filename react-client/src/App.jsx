@@ -31,7 +31,14 @@ function App() {
     <div>
       <Router>
         <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">PRM System</Navbar.Brand>
+          <Navbar.Brand href="#home">  <img
+              alt=""
+              src="react-client/src/assets/HealthIcon.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+          />{' '}
+            PRM System</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto ml-auto">
