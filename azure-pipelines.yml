@@ -6,26 +6,105 @@
 trigger:
 - main
 
-pool:
-  name: Self-Windows
+stages: 
+- stage: 'Build'
+  jobs:
+  - job:
+    pool:
+      name: Self-Windows
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '18.x'
+      displayName: 'Install Node.js'
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '18.x'
-  displayName: 'Install Node.js'
+    - script: |
+        npm install
+        npm run build
+      displayName: 'npm install and build'
 
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+    - script: npm run test -- --coverage --coverageReporters=text-lcov | tee coverage.lcov
+      displayName: 'Run Jest tests and generate coverage report'
 
-- script: npm run test -- --coverage --coverageReporters=text-lcov | tee coverage.lcov
-  displayName: 'Run Jest tests and generate coverage report'
+    - task: PublishCodeCoverageResults@1
+      inputs:
+        codeCoverageTool: 'Cobertura'
+        summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage.lcov'
+        reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
+      displayName: 'Publish code coverage report'
 
-- task: PublishCodeCoverageResults@1
-  inputs:
-      codeCoverageTool: 'Cobertura'
-      summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage.lcov'
-      reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
-  displayName: 'Publish code coverage report'
+- stage: 'Dev'
+  jobs:
+  - job: 'Deploy'
+    pool:
+      name: Self-Windows
+    steps:
+    - task: DownloadBuildArtifacts@0
+      inputs:
+        buildType: 'current'
+        downloadType: 'single'
+        artifactName: 'drop'
+        downloadPath: '$(System.ArtifactsDirectory)'
+      displayName: 'Download Artifact'
+    - script: |
+        cd $(System.ArtifactsDirectory)/drop
+        npm install
+        pm2 restart app.js
+      displayName: 'Deploy to Dev'
+
+- stage: 'QAT'
+  jobs:
+  - job: 'Deploy'
+    pool:
+      name: Self-Windows
+    steps:
+    - task: DownloadBuildArtifacts@0
+      inputs:
+        buildType: 'current'
+        downloadType: 'single'
+        artifactName: 'drop'
+        downloadPath: '$(System.ArtifactsDirectory)'
+      displayName: 'Download Artifact'
+    - script: |
+        cd $(System.ArtifactsDirectory)/drop
+        npm install
+        pm2 restart app.js
+      displayName: 'Deploy to QAT'
+
+- stage: 'Staging'
+  jobs:
+  - job: 'Deploy'
+    pool:
+      name: Self-Windows
+    steps:
+    - task: DownloadBuildArtifacts@0
+      inputs:
+        buildType: 'current'
+        downloadType: 'single'
+        artifactName: 'drop'
+        downloadPath: '$(System.ArtifactsDirectory)'
+      displayName: 'Download Artifact'
+    - script: |
+        cd $(System.ArtifactsDirectory)/drop
+        npm install
+        pm2 restart app.js
+      displayName: 'Deploy to Staging'
+
+- stage: 'Production'
+  jobs:
+  - job: 'Deploy'
+    pool:
+      name: Self-Windows
+    steps:
+    - task: DownloadBuildArtifacts@0
+      inputs:
+        buildType: 'current'
+        downloadType: 'single'
+        artifactName: 'drop'
+        downloadPath: '$(System.ArtifactsDirectory)'
+      displayName: 'Download Artifact'
+    - script: |
+        cd $(System.ArtifactsDirectory)/drop
+        npm install
+        pm2 restart app.js
+      displayName: 'Deploy to Production'
