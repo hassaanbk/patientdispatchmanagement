@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 import Home from "./components/Home";
-import Login from "./components/login";
+import Login from "./components/Login";
 import Register from "./components/Register";
 import NurseHome from "./components/NurseHome";
 import Patient from "./components/PatientHome";
