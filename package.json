@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --forceExit",
     "dev": "nodemon server",
-    "start": "node server"
+    "start": "node server --production"
   },
   "keywords": [],
   "author": "Hassaan bK",
