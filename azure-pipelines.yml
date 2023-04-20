@@ -35,6 +35,18 @@ stages:
         summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage.lcov'
         reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
       displayName: 'Publish code coverage report'
+    
+    - task: ArchiveFiles@2
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)/dist'
+        includeRootFolder: true
+        archiveFile: '$(Build.ArtifactStagingDirectory)/express-app.zip'
+    
+    - task: PublishBuildArtifacts@1
+      inputs:
+        artifactName: 'express-app'
+        pathToPublish: '$(Build.ArtifactStagingDirectory)/express-app.zip'
+
 
 - stage: 'Dev'
   jobs:
