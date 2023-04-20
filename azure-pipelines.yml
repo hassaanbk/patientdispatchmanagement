@@ -25,7 +25,7 @@ stages:
         yarn run build
       displayName: 'yarn install and build'
 
-    - script: yarn run test -- --coverage --coverageReporters=text-lcov
+    - script: npm run test -- --coverage --coverageReporters=text-lcov
       displayName: 'Run Jest tests and generate coverage report'
 
     - task: PublishCodeCoverageResults@1
