@@ -26,7 +26,7 @@ stages:
 
     - script: |
         npm install --global jest
-        npm run test -- --coverage --coverageReporters=text-lcov
+        jest -- --coverage --coverageReporters=text-lcov
       displayName: 'Run Jest tests and generate coverage report'
 
     - task: PublishCodeCoverageResults@1
