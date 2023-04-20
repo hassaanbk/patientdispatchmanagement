@@ -83,6 +83,7 @@ stages:
       displayName: 'Download Artifact'
     - script: |
         cd $(System.ArtifactsDirectory)/express-app
+        npm install --global yarn pm2
         yarn install
         pm2 restart app.js
       displayName: 'Deploy to QAT'
@@ -102,6 +103,7 @@ stages:
       displayName: 'Download Artifact'
     - script: |
         cd $(System.ArtifactsDirectory)/express-app
+        npm install --global yarn pm2
         yarn install
         pm2 restart app.js
       displayName: 'Deploy to Staging'
@@ -121,6 +123,7 @@ stages:
       displayName: 'Download Artifact'
     - script: |
         cd $(System.ArtifactsDirectory)/express-app
+        npm install --global yarn pm2
         yarn install
         pm2 restart app.js
       displayName: 'Deploy to Production'
