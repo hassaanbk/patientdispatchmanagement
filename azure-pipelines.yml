@@ -21,7 +21,7 @@ stages:
     - script: |
         npm install --global yarn
         yarn config set python C:\Users\hassa\AppData\Local\Programs\Python\Python311\python.exe
-        yarn install jest
+        yarn install -g jest
         yarn run build
       displayName: 'yarn install and build'
 
