@@ -58,7 +58,7 @@ stages:
       inputs:
         buildType: 'current'
         downloadType: 'single'
-        artifactName: 'drop'
+        artifactName: 'express-app'
         downloadPath: '$(System.ArtifactsDirectory)'
       displayName: 'Download Artifact'
     - script: |
@@ -77,7 +77,7 @@ stages:
       inputs:
         buildType: 'current'
         downloadType: 'single'
-        artifactName: 'drop'
+        artifactName: 'express-app'
         downloadPath: '$(System.ArtifactsDirectory)'
       displayName: 'Download Artifact'
     - script: |
@@ -96,7 +96,7 @@ stages:
       inputs:
         buildType: 'current'
         downloadType: 'single'
-        artifactName: 'drop'
+        artifactName: 'express-app'
         downloadPath: '$(System.ArtifactsDirectory)'
       displayName: 'Download Artifact'
     - script: |
@@ -115,7 +115,7 @@ stages:
       inputs:
         buildType: 'current'
         downloadType: 'single'
-        artifactName: 'drop'
+        artifactName: 'express-app'
         downloadPath: '$(System.ArtifactsDirectory)'
       displayName: 'Download Artifact'
     - script: |
