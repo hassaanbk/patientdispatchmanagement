@@ -21,11 +21,12 @@ stages:
     - script: |
         npm install --global yarn
         yarn config set python C:\Users\hassa\AppData\Local\Programs\Python\Python311\python.exe
-        yarn add jest -D
         yarn run build
       displayName: 'yarn install and build'
 
-    - script: npm run test -- --coverage --coverageReporters=text-lcov
+    - script: |
+        npm install --global jest
+        npm run test -- --coverage --coverageReporters=text-lcov
       displayName: 'Run Jest tests and generate coverage report'
 
     - task: PublishCodeCoverageResults@1
