@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "nodemon server",
     "start": "node server"
   },
@@ -40,6 +40,7 @@
     "nodemon": "^2.0.22",
     "react-bootstrap": "^2.7.4",
     "react-router": "^6.10.0",
-    "react-router-dom": "^6.10.0"
+    "react-router-dom": "^6.10.0",
+    "supertest": "^6.3.3"
   }
 }

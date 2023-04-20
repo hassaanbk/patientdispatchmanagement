@@ -12,13 +12,13 @@ const emergencyAlertType = new GraphQLObjectType({
     name: 'emergencyAlert',
     fields: () => ({
         _id: {
-            type: new GraphQLNonNull(GraphQLString)
+            type: GraphQLString
         },
         alert: {
-            type: new GraphQLNonNull(GraphQLString)
+            type: GraphQLString
         },
         patient: {
-            type: new GraphQLNonNull(GraphQLString)
+            type: GraphQLString
         }
     })
 });
@@ -64,7 +64,7 @@ const mutationType = {
         },
         resolve: (root, args) => {
             const emergencyAlert = new emergencyAlertModel({
-                alert: args.alert,
+                alertMessage: args.alert,
                 patient: args.patient
             });
             return emergencyAlert.save();
