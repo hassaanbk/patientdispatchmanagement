@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import Spinner from 'react-bootstrap';
 
-export default function Results() {
-  const [data, setData] = React.useState({});
-  const [loading, setLoading] = React.useState(true);
+Results = (props) => {
+  const [data, setData] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [count, setCount] = useState("0")
   const apiUrl = "http://localhost:5000/hospital/model";
 
   const fetchData = async () => {
@@ -16,10 +17,11 @@ export default function Results() {
       console.log(error);
     }
   };
+  setCount(props.label)
 
-  useEffect(() => {
+ // useEffect(() => {
     fetchData();
-  }, []);
+  //}, [count]);
 
   return (
     <div>
@@ -50,3 +52,5 @@ export default function Results() {
     </div>
   );
 };
+
+export default Results;
