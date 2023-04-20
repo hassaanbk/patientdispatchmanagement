@@ -74,7 +74,7 @@ function App() {
             element={<MotivationalVideos />}
           />
           <Route path="/patient/tiktaktoe" element={<Game />} />
-          <Route path="/patient/result" element={<Result />} />
+          <Route path="/patient/result" element={<Result label="1"/>} />
         </Routes>
       </Router>
     </div>

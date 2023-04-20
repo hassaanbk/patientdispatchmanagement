@@ -34,7 +34,7 @@ export default function Checklist() {
                     <div className='button'>
                         <Button className='buttonSave' variant="primary" type="submit">
                             Submit
-                        </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </Button>
                         <Button className='buttonCancel' variant="danger" type="submit" >
                             Cancel
                         </Button>
