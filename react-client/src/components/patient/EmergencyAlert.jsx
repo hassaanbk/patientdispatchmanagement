@@ -4,9 +4,9 @@ import { Container, Form, Button } from 'react-bootstrap';
 
 export const CREATE_EMERGENCY_ALERT = gql`
   mutation createEmergencyAlert($alertMessage: String!) {
-    createEmergencyAlert(alertMessage: $message) {
+    createEmergencyAlert(alert: $alertmessage) {
       id
-      message
+      alert
     }
   }
 `;

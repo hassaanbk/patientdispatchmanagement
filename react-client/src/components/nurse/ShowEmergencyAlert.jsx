@@ -9,7 +9,7 @@ const GET_ALERTS = gql`
   query getAlerts {
     emergenctAlerts {
       _id
-      alertMessage
+      alert
     }
   }
 `;
