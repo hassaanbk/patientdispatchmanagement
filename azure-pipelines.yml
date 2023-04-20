@@ -26,13 +26,13 @@ stages:
 
     - script: |
         npm install --global jest
-        jest -- --coverage --coverageReporters=text-lcov
+        jest --coverage --coverageReporters=cobertura
       displayName: 'Run Jest tests and generate coverage report'
 
     - task: PublishCodeCoverageResults@1
       inputs:
         codeCoverageTool: 'Cobertura'
-        summaryFileLocation: '$(System.DefaultWorkingDirectory)/lcov.info'
+        summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml'
         reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
       displayName: 'Publish code coverage report'
     
