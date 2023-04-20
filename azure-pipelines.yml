@@ -32,7 +32,7 @@ stages:
     - task: PublishCodeCoverageResults@1
       inputs:
         codeCoverageTool: 'Cobertura'
-        summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/lcov.info'
+        summaryFileLocation: '$(System.DefaultWorkingDirectory)/lcov.info'
         reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
       displayName: 'Publish code coverage report'
     
