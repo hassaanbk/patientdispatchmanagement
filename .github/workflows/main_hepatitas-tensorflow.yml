@@ -26,7 +26,7 @@ jobs:
           yarn install
 
       - name: zip files
-        run: zip node-app.zip .
+        run: zip node-app.zip ./* -r
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
