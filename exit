@@ -1,0 +1,207 @@
+[33mcommit fce05c4f2098a736d827e22e83cbc6bc6d175ee5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: hassaanbk <90360809+hassaanbk@users.noreply.github.com>
+Date:   Thu Apr 20 09:06:10 2023 -0400
+
+    fixed code coverage
+
+[33mcommit 6e6f287a326b1b3e6a053ad26420803b53ee3e0d[m
+Merge: 18c7cfc 39e5e5e
+Author: hassaanbk <90360809+hassaanbk@users.noreply.github.com>
+Date:   Thu Apr 20 00:20:52 2023 -0400
+
+    Merge branch 'main' of https://github.com/hassaanbk/patientdispatchmanagement
+
+[33mcommit 18c7cfc4dd23582fc72651fd47166fa2f53e2eb7[m
+Author: hassaanbk <90360809+hassaanbk@users.noreply.github.com>
+Date:   Thu Apr 20 00:20:42 2023 -0400
+
+    fixing test coverage
+
+[33mcommit 39e5e5e28894080f3a307bc208b862a98e5550ce[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:39:24 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 5f8e0e3f9ae550b2aae16625cf100558cd549fa4[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:34:45 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit a95ce098c09eb7ee0136303daaa36372cccb5584[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:31:10 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 1f269bd989a7ba239fcaf9fd33ea5669095ab977[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:27:12 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit e9e7bd5aa32b4fb77590bcc42a33750501713de7[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:22:20 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 47651388857527974ac7a982f0d4627642dd1632[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:18:21 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 5883cbaad1ab35ad7e4af59e76727b3e11549dc2[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:14:38 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit c38a2393d649b06bf4a5d547809e7d54fe8547ed[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:13:44 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 56bea3585fdaaa66338b7b791675849aeb70c860[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:11:58 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 9f1f89299a9923867bd50b666e5453998446fc21[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:10:47 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 486295d53385de4f025b4a7458b6a1d8f34462ab[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:09:47 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit c88e53995054dfcde6272aa58c280e9dbc84065a[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:08:00 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit a53fc46a56d077534e5dd336558619a01a0644e9[m
+Merge: 3a35acf 58afeb1
+Author: hassaanbk <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:07:00 2023 -0400
+
+    Merge branch 'main' of https://github.com/hassaanbk/patientdispatchmanagement
+
+[33mcommit 3a35acffc17dc5c27443ee6d0a8ba2ae2f2a8b12[m
+Author: hassaanbk <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 23:06:14 2023 -0400
+
+    added jest integration test
+
+[33mcommit 58afeb1e8a5e49c70927285a48d9144a9509c12f[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 22:21:37 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 740126c570d5d8381aa34fc6589f5f3139552cf5[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 22:19:56 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 772aef90b5b9112433bffe9d01d4ec01abe6ff45[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 22:17:53 2023 -0400
+
+    Update package.json
+
+[33mcommit 8f5a015baf80beeed01b553d050b0db9b5ff1822[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 22:16:47 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit aab8a0f1abcc126a67287a60319f5d59d3329501[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 22:15:50 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 9081ac7d5fd294563ec18a4009d4de648201569c[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 22:14:34 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 98c3b9865a8ed8f9b1a74483a429733cc1f72109[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 22:04:07 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 9b2f61c92dd229e1e0a71db893e4530b12aa0e1c[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 18:47:09 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 15064c7264ae4479e55944381aba1e4b800d338a[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 15:54:58 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 1530110073c1bf27dc5aff35e5c8ef26458d5465[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 15:25:42 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 69315e2056e64839c86359164ca8a09919d69299[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 15:18:57 2023 -0400
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit ba5285e84bdd227d80a0205e86921c934c492c03[m
+Author: Hassaan Bin Khalil <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 15:18:06 2023 -0400
+
+    Set up CI with Azure Pipelines
+    
+    [skip ci]
+
+[33mcommit 6dddef0a27547dc130d7521e503ac160ce56a726[m
+Author: hassaanbk <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 15:16:38 2023 -0400
+
+    add npm start to vite
+
+[33mcommit c558a01ea7c29df01273b1c6285eeecf8d6e24a9[m
+Author: hassaanbk <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 15:12:56 2023 -0400
+
+    added eslint
+
+[33mcommit 43fca7fff23b728f9fc0cf3704af0c9b296b9b5a[m
+Author: hassaanbk <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 15:10:38 2023 -0400
+
+    adding jest
+
+[33mcommit b108ddfbc755f3e738c95171f095c55c22513d69[m[33m ([m[1;31morigin/2-add-some-data-to-the-emergency-alert[m[33m, [m[1;31morigin/1-fix-the-ml-api-consumation[m[33m)[m
+Author: hassaanbk <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 14:13:40 2023 -0400
+
+    first commit
+
+[33mcommit 3e1b4aad38e3cc6e99cf4d857390bc62928887e8[m
+Author: hassaanbk <90360809+hassaanbk@users.noreply.github.com>
+Date:   Wed Apr 19 14:12:45 2023 -0400
+
+    first commit
