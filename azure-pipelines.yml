@@ -19,12 +19,11 @@ stages:
       displayName: 'Install Node.js'
 
     - script: |
-        npm config set python "C:\Users\hassa\AppData\Local\Programs\Python\Python311\python.exe"
-        npm install --python="C:\Users\hassa\AppData\Local\Programs\Python\Python311\python.exe"
-        npm run build
-      displayName: 'npm install and build'
+        yarn install --python="C:\Users\hassa\AppData\Local\Programs\Python\Python311\python.exe"
+        yarn run build
+      displayName: 'yarn install and build'
 
-    - script: npm run test -- --coverage --coverageReporters=text-lcov | tee coverage.lcov
+    - script: yarn run test -- --coverage --coverageReporters=text-lcov | tee coverage.lcov
       displayName: 'Run Jest tests and generate coverage report'
 
     - task: PublishCodeCoverageResults@1
@@ -49,7 +48,7 @@ stages:
       displayName: 'Download Artifact'
     - script: |
         cd $(System.ArtifactsDirectory)/drop
-        npm install
+        yarn install
         pm2 restart app.js
       displayName: 'Deploy to Dev'
 
@@ -68,7 +67,7 @@ stages:
       displayName: 'Download Artifact'
     - script: |
         cd $(System.ArtifactsDirectory)/drop
-        npm install
+        yarn install
         pm2 restart app.js
       displayName: 'Deploy to QAT'
 
@@ -87,7 +86,7 @@ stages:
       displayName: 'Download Artifact'
     - script: |
         cd $(System.ArtifactsDirectory)/drop
-        npm install
+        yarn install
         pm2 restart app.js
       displayName: 'Deploy to Staging'
 
@@ -106,6 +105,6 @@ stages:
       displayName: 'Download Artifact'
     - script: |
         cd $(System.ArtifactsDirectory)/drop
-        npm install
+        yarn install
         pm2 restart app.js
       displayName: 'Deploy to Production'
