@@ -65,7 +65,7 @@ stages:
         cd $(System.ArtifactsDirectory)/express-app
         npm install --global yarn pm2
         yarn install
-        pm2 restart app.js
+        pm2 restart app.js -p 5002
         docker build -t react-app-vite .
         docker run -p 8050:5000 react-app-vite
       displayName: 'Deploy to Dev'
