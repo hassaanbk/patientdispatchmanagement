@@ -1,5 +1,5 @@
 module.exports = {
-    db: 'mongodb://127.0.0.1:27017/hospital',
+    db: 'mongodb+srv://hassaanbk:BweptzoJoEBvu03y@cluster0.nzwvgvz.mongodb.net/?retryWrites=true&w=majority/hospitaldb',
     sessionSecret: 'developmentSessionSecret',
     secretKey: 'real_secret',
     jwtExpiry: 300
